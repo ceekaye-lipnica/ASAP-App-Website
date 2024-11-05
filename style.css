@@ -161,8 +161,8 @@ padding: 1rem 1.5rem;
 } 
 
 .main{
-    color: var(--mainBlue);
-    background-color: var(--light);
+    color: var(--light);
+    background-color: var(--darkRed);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -171,9 +171,9 @@ padding: 1rem 1.5rem;
 }
 
 .main:hover{
-    background-color: var(--mainBlue);
-    color: var(--light);
-    border: 2px solid var(--light);
+    background-color: var(--light);
+    color: var(--darkRed);
+    border: 2px solid var(--darkRed);
     transition: .5s ease-in;
 }
 
@@ -220,18 +220,18 @@ padding: 1rem 1.5rem;
 .banner-bg{
     background-color: rgba(126, 31, 35, .95);
     padding-top: 3rem;
-    height: 55vh;
+    height: 70vh;
     position: relative;
 }
 
 .banner-img img{
-    width: 48rem;
+    width: 45rem;
 }
 
 .banner-img{
     position: absolute;
-    right: 20%;
-    bottom: -10rem;
+    right: 15%;
+    bottom: -8rem;
 }
 
 .banner-text{
@@ -260,6 +260,7 @@ padding: 1rem 1.5rem;
 /* ===== ABOUT SECTION ===== */
 .about{
     padding-top: 10rem;
+    position: relative;
 }
 
 .about-wrapper{
@@ -289,4 +290,380 @@ padding: 1rem 1.5rem;
     color: var(--dark);
     font-size: 1.7rem;
     text-align: justify;
+}
+
+.about-cards-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+.about-cards{
+    padding: 4rem;
+    background-color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 35rem;
+    height: 35rem;
+}
+
+.about-cards-img{
+    display: flex;
+    justify-content: end;
+    margin-bottom: -6rem;
+}
+
+.about-cards-img img{
+    width: 6rem;
+}
+
+.about-cards h4{
+    color: var(--dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.about-cards h3{
+    color: var(--dark);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 2rem 0;
+    width: 10rem;
+}
+
+.about-cards p{
+    color: var(--dark);
+    font-size: 1.7rem;
+    width: 10rem;
+    line-height: 1.2;
+}
+
+.about-cards span{
+    height: .5rem;
+    width: 9rem;
+    display: block;
+    background-color: var(--darkRed);
+    margin-top: 2rem ;
+}
+
+.about-merchant{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 3rem 0;
+}
+
+.about-merchant-phone{
+    position: relative;
+}
+
+.about-merchant-phone-img img{
+    width: 65rem;
+}
+
+.about-merchant-phone-text{
+    position: absolute;
+    right: 2rem;
+    top: 8rem;
+}
+
+.about-merchant-phone-text h4{
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.about-merchant-phone-text h3{
+    color: var(--darkRed);
+    font-size: 5rem;
+    font-weight: 800;
+    width: 27rem;
+    line-height: 1;
+}
+
+.about-merchant-app{
+    width: 40rem;
+    margin-top: 10rem;
+}
+
+.about-merchant-app-img img{
+    width: 20rem;
+}
+
+.about-merchant-app-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-merchant-app p{
+    color: var(--dark);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+
+/* ===== SERVICES SECTION ===== */
+.services{
+    background-image: url('./img/service-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.services-bg{
+    background-color: rgba(225, 225, 225, .9);
+    padding: 5rem 0;
+}
+
+.services-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-title h3{
+    color: var(--dark);
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.services-title p{
+    color: var(--dark);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: 60rem;
+}
+
+.services-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 12rem;
+}
+
+.service-cards{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem
+}
+
+.service-cards h4{
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.service-cards img{
+    width: 10rem;
+}
+
+
+/* ===== CONTACT SECTON ===== */
+.contact{
+    position: relative;
+    padding: 10rem 0;
+
+}
+
+.contact-bg {
+    background-image: url('./img/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    
+    width: 35rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.contact-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); /* Red color with 90% opacity */
+    z-index: 1;
+}
+
+.contact-bg * {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 7rem ;
+}
+
+.contact-img{
+    position: absolute;
+    left: -5rem;
+    bottom: -.5rem;
+    z-index: 2;
+}
+
+.contact-img img{
+    width: 50rem;
+}
+
+.contact-form-text h3{
+    color: var(--dark);
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.contact-form-text p{
+    color: var(--dark);
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form-group label span{
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    height: 100px;
+}
+
+.submitBtn{
+    width: 15rem;
+    text-align: center;
+}
+
+
+/* ===== LINKS SECTON ===== */
+.links{
+    padding: 5rem 0;
+    background-color: var(--light);
+}
+
+.links-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10rem;
+}
+
+.link-card{
+    width: 30rem;
+}
+
+.link-card h3{
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.link-1 img{
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.link-1 p{
+    color: var(--dark);
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.link-2 {
+    width: 20rem;
+}
+
+.link-2 ul li {
+    margin-bottom: 1.5rem;
+}
+
+
+.link-2 ul li a{
+    color: var(--dark);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.link-3 ul li{
+    color: var(--dark);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.link-4 ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 12rem;
+}
+
+
+.link-4 ul li a{
+    color: var(--darkRed);
+    font-size: 2.5rem;
+}
+
+
+/* ===== FOOTER SECTON ===== */
+.footer{
+    padding: 1.5rem;
+    background-color: var(--darkRed);
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper p{
+    color: var(--light);
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: italic;
 }
