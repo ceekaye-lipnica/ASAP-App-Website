@@ -1,0 +1,292 @@
+/* ---------RESETS--------- */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* FOR REMOVING THE BLANK SPACE ON THE SIDE  */
+@media screen and (max-width: 1024px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+
+
+/*------------CONTAINER/GRID-------------*/
+.container{
+max-width: 120rem;
+margin: 0 auto;
+padding: 1rem 1.5rem;
+}
+
+/* COLORS  */
+:root {
+    --mainRed: #7e1f23;
+    --darkRed: #7e191b;
+    --dark: #191919;
+    --light: #ffffff;
+}
+
+/* BUTTON CSS */
+.btn{
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-size:1.5rem;
+    border-radius: 20px;
+} 
+
+.main{
+    color: var(--mainBlue);
+    background-color: var(--light);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: .5s ease-in;
+}
+
+.main:hover{
+    background-color: var(--mainBlue);
+    color: var(--light);
+    border: 2px solid var(--light);
+    transition: .5s ease-in;
+}
+
+
+
+/* ===== HEADER ===== */
+.header{
+    background-color: var(--mainRed);
+    padding: 1rem;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-branding img{
+    width: 10rem;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header-nav li a{
+    color: var(--light);
+    font-size: 1.8rem;
+}
+
+
+/* ===== BANNER SECTION ===== */
+.banner{
+    background-image: url('./img/banner-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.banner-bg{
+    background-color: rgba(126, 31, 35, .95);
+    padding-top: 3rem;
+    height: 55vh;
+    position: relative;
+}
+
+.banner-img img{
+    width: 48rem;
+}
+
+.banner-img{
+    position: absolute;
+    right: 20%;
+    bottom: -10rem;
+}
+
+.banner-text{
+    width: 50rem;
+    margin-top: 10rem;
+}
+
+.banner-text h3{
+    font-size: 5rem;
+    color: var(--light);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.banner-text h3 span{
+    display: block;
+}
+
+.banner-text p{
+    font-size: 1.8rem;
+    color: var(--light);
+}
+
+
+/* ===== ABOUT SECTION ===== */
+.about{
+    padding-top: 10rem;
+}
+
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text{
+    width: 50rem;
+}
+
+.about-text h3{
+    color: var(--dark);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.about-text h3 span{
+    color: var(--darkRed);
+    display: block;
+}
+
+.about-text p{
+    color: var(--dark);
+    font-size: 1.7rem;
+    text-align: justify;
+}
