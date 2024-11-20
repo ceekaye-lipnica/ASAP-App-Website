@@ -183,6 +183,7 @@ padding: 1rem 1.5rem;
 .header{
     background-color: var(--mainRed);
     padding: 1rem;
+    position: relative;
 }
 
 .header-wrapper{
@@ -206,6 +207,83 @@ padding: 1rem 1.5rem;
     color: var(--light);
     font-size: 1.8rem;
 }
+
+.toggle__menu{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        background: var(--mainRed);
+        width: 100%;
+        position: absolute;
+        top: 14rem;
+        right: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: .5s ease;
+        z-index: 9;
+    }
+    
+    .header-nav.open{
+        max-height: 50rem;
+        transition: .5s ease;
+    }
+
+    .header-nav li:first-child{
+        margin-top: 3rem;
+    }
+
+    .header-nav li:last-child{
+        margin-bottom: 3rem;
+    }
+    
+    .header-branding img{
+        width: 10rem;
+    }
+    
+    .toggle__menu span{
+        width: 3rem;
+        height: .3rem;
+        display: block;
+        margin-top: .3rem;
+        border-radius: 5rem;
+        transition: .5s ease;
+        background-color: var(--light);
+    }
+    
+    .toggle__menu{
+        display: block;
+    }
+    
+    .toggle__menu.open span:first-child{
+        transform: translate(0, 5px) rotate(225deg);
+        transition: .5s ease;
+    }
+    
+    .toggle__menu.open span:nth-child(2){
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .toggle__menu.open span:last-child{
+        transform: translate(0, -7px) rotate(-225deg);
+        transition: .5s ease;
+    }
+    
+    .toggle__menu:hover{
+        cursor: pointer;
+    }
+
+}
+
+
 
 
 /* ===== BANNER SECTION ===== */
@@ -254,6 +332,24 @@ padding: 1rem 1.5rem;
 .banner-text p{
     font-size: 1.8rem;
     color: var(--light);
+}
+
+@media screen and (max-width: 500px){
+    .banner-img img{
+        width: 35rem;
+    }
+    
+    .banner-img{
+        position: absolute;
+        right: 10%;
+        bottom: -5rem;
+    }
+    
+    .banner-text{
+        width: 100%;
+        margin-top: 3rem;
+    }
+
 }
 
 
@@ -405,6 +501,84 @@ padding: 1rem 1.5rem;
     margin: 2rem 0;
 }
 
+@media screen and (max-width: 500px) {
+
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-vid iframe{
+        width: 400px;
+    }
+    
+    .about-text{
+        width: 100%;
+    }
+
+    .about-text h3 span{
+        display: unset;
+        margin-left: 1rem;
+    }
+    
+    .about-cards-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .about-merchant{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-merchant-phone-img img{
+        width: 100%;
+    }
+
+    .about-merchant-phone-text{
+        right: 0;
+        top: 3rem;
+    }
+    
+    .about-merchant-phone-text h4{
+        text-align: right;
+    }
+    
+    .about-merchant-phone-text h3{
+        text-align: right;
+        font-size: 4rem;
+    }
+    
+    .about-merchant-app{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    
+    .about-merchant-app-img img{
+        width: 50%;
+    }
+    
+    .about-merchant-app-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .regbtn{
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
 
 /* ===== SERVICES SECTION ===== */
 .services{
@@ -461,6 +635,41 @@ padding: 1rem 1.5rem;
 
 .service-cards img{
     width: 10rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .services-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .services-title p{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .services-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+    }
+
+    .service-cards{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem
+    }
+
+    .service-cards h4{
+        font-size: 2.5rem;
+    }
+
 }
 
 
@@ -576,6 +785,44 @@ textarea {
 }
 
 
+
+@media screen and (max-width: 500px) {
+    .contact{
+        position: relative;
+        padding: 5rem 0;
+    
+    }
+
+    .contact-bg {
+        display: none;
+    }
+    
+    .contact-img img{
+        display: none;
+    }
+
+    .contact-form-text h3{
+        text-align: center;
+    }
+    
+    .contact-form-text p{
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+    
+    .contact-wrapper{
+        margin-right: 0 ;
+    }
+
+    .submitBtn{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+}
+
+
+
 /* ===== LINKS SECTON ===== */
 .links{
     padding: 5rem 0;
@@ -648,6 +895,34 @@ textarea {
     font-size: 2.5rem;
 }
 
+@media screen and (max-width: 500px) {
+    .links-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    .link-card{
+        width: 100%;
+    }
+
+    .link-1 img{
+        width: 15rem;
+    }
+    
+    .link-1 p{
+        font-size: 1.6rem;
+    }
+
+    .link-4 ul{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 4rem;
+        width: 100%;
+    }
+    
+}
 
 /* ===== FOOTER SECTON ===== */
 .footer{
@@ -666,4 +941,22 @@ textarea {
     font-size: 1.6rem;
     font-weight: 700;
     font-style: italic;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .footer-wrapper p{
+        color: var(--light);
+        font-size: 1.5rem;
+    }
+
 }
